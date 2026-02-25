@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation de Réservation</title>
+  <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+  <div class="confirmation-container">
+    <div class="card">
+      <h1>🎉 Réservation Confirmée !</h1>
+      <p class="message">Merci pour votre confiance. Votre demande a bien été enregistrée.</p>
+      <div class="summary">
+        <p><strong>Nom :</strong> <?php echo htmlspecialchars($_POST['nom']); ?></p>
+        <p><strong>Matériel :</strong> <?php echo htmlspecialchars($_POST['materiel']); ?></p>
+        <p><strong>Quantité :</strong> <?php echo htmlspecialchars($_POST['quantite']); ?></p>
+        <p><strong>Date de réservation :</strong> <?php echo htmlspecialchars($_POST['date']); ?></p>
+      </div>
+      <a href="index.html" class="btn">Retour à l'accueil</a>
+    </div>
+  </div>
+</body>
+</html>

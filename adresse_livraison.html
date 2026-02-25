@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Adresse de Livraison</title>
+  <link rel="stylesheet" href="adresse_livraison.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Adresse de Livraison</h2>
+    <form action="confirmation.php" method="POST">
+      <label>Adresse :</label>
+      <input type="text" name="adresse" placeholder="Ex : Cocody Angré, Cité Lumière" required>
+      
+      <label>Date souhaitée :</label>
+      <input type="date" name="date" required>
+
+      <label>Heure :</label>
+      <input type="time" name="heure" required>
+
+      <button type="submit">Confirmer la livraison</button>
+    </form>
+  </div>
+</body>
+</html>

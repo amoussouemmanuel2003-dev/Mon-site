@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Choix de Livraison - Kim Event</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="livraison_mode.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Comment souhaitez-vous recevoir votre matériel ?</h2>
+
+    <form action="traitement_mode.php" method="POST">
+      <div class="option">
+        <input type="radio" id="livraison" name="mode" value="livraison" required>
+        <label for="livraison">
+          🚚 Livraison par Kim Event<br>
+          <small>Le matériel sera livré à votre adresse. Des frais peuvent s’appliquer.</small>
+        </label>
+      </div>
+
+      <div class="option">
+        <input type="radio" id="retrait" name="mode" value="retrait" required>
+        <label for="retrait">
+          🛍 Retrait par vos soins<br>
+          <small>Vous viendrez chercher le matériel à notre dépôt.</small>
+        </label>
+      </div>
+
+      <button type="submit">Continuer</button>
+    </form>
+  </div>
+</body>
+</html>

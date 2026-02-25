@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Paiement Mobile - Kim Event</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="paiement.css">
+</head>
+<body>
+  <div class="container">
+    <h2>💸 Paiement Mobile</h2>
+    <p class="amount">Montant à payer : <strong>15 000 FCFA</strong></p>
+
+    <form action="confirmation_paiement.html" method="POST" class="form">
+      <label for="operateur">Choisissez un opérateur :</label>
+      <select id="operateur" name="operateur" required>
+        <option value="">-- Sélectionner --</option>
+        <option value="orange">Orange Money</option>
+        <option value="moov">Moov Money</option>
+        <option value="mtn">MTN Mobile Money</option>
+        <option value="wave">Wave</option>
+      </select>
+
+      <label for="numero">Numéro de téléphone :</label>
+      <input type="tel" id="numero" name="numero" placeholder="Ex: 0102030405" required>
+
+      <button type="submit" class="btn">Payer maintenant</button>
+    </form>
+  </div>
+</body>
+</html>

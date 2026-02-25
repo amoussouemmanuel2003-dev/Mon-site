@@ -1,0 +1,88 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f3f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .btn-login {
+      padding: 8px 15px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background-color: white;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .form-container h2 {
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+
+    .form-container p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #334;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .form-container button:hover {
+      background-color: #223;
+    }
+
+    .form-container .link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .form-container .link a {
+      color: #333;
+      text-decoration: underline;
+    }
